@@ -21,7 +21,7 @@ jobs:
         run: test -f index.html
 
       - name: Validate homepage content
-        run: grep -q "Devops" index.html
+        run: grep -q "DevOps" index.html
 
       - name: Display success message
         run: echo "CI pipeline completed successfully!"
