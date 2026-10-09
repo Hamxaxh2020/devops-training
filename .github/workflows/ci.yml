@@ -20,8 +20,10 @@ jobs:
       - name: Check homepage exists
         run: test -f index.html
 
-      - name: Validate homepage content
-        run: grep -q "DevOps" index.html
+      - name: Validate homepage HTML structure
+        run: python3 validate_html.py
+#      - name: Validate homepage content
+#        run: grep -q "DevOps" index.html
 
       - name: Display success message
         run: echo "CI pipeline completed successfully!"
